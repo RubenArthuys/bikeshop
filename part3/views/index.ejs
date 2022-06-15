@@ -21,7 +21,12 @@
                     </a>
                 </nav>
             </div>  
-
+            <!-- 
+            <form action="/test/submit" method="post">
+                <input type="text" name="id">
+                <button>Submit</button>
+            </form> 
+            -->
             <!-- JUMBOTRON -->
             <div class="row">
                 <div class="col-12 jumbotron jumbotron-fluid">
@@ -29,22 +34,19 @@
                     </div>
                 </div>
             </div>
-
             <div class="row">
-                
-                <% for(var i=0; i<dataBikeEJS.length; i++) { %>
 
+                <% for(var i=0; i<dataBikeEJS.length; i++) { %>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="card">
                         <img src=<%= dataBikeEJS[i].url %> class="card-img-top">
                         <div class="card-body text-center">
                             <h5 class="card-title"><%= dataBikeEJS[i].name %>></h5>
                             <%= dataBikeEJS[i].price %>€
-                            <a href="shop" class="btn btn-outline-info btn-sm">Buy</a>
+                            <a href="/shop?bikeNameFromFront=<%= dataBikeEJS[i].name %>&bikePriceFromFront=<%= dataBikeEJS[i].price %>&bikeUrlFromFront=<%= dataBikeEJS[i].url %>" class="btn btn-outline-info btn-sm">Buy</a>
                         </div>
                     </div>
                 </div>
-
                 <% } %>
 
             </div>

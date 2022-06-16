@@ -36,7 +36,7 @@ router.get('/shop', function (req, res, next) {
       req.session.dataCardBikeVar[i].quantity += 1;
       // req.session.dataCardBikeVar[i].quantity = Number(req.session.dataCardBikeVar[i].quantity) + 1;
       
-      //on met le booléen à true, du coup, pas besoin d'aller dans la boucle suivante.
+      //on met le booléen à true, donc pas besoin d'aller dans la boucle suivante = break;
       alreadyExist = true;
     }
   }

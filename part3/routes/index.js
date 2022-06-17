@@ -12,7 +12,6 @@ var dataBikeVar = [
 
 var dataCardBikeVar = []
 
-
 // Home page
 router.get('/', function (req, res, next) {
   res.render('index', { title: 'BikeShop - Home', dataBikeEJS: dataBikeVar });

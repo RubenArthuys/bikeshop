@@ -18,7 +18,6 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'BikeShop - Home', dataBikeEJS: dataBikeVar });
 });
 
-
 //Shop
 router.get('/shop', function (req, res, next) {
   // console.log(req.query)

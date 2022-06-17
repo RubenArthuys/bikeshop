@@ -14,7 +14,6 @@ var dataBikeVar = [
   { name : "LIK099" , url : '/images/bike-6.jpg', price : 869 }    
 ]
 
-
 var dataCardBikeVar = [
   { name : "BIK045" , url : "/images/bike-1.jpg", price : 679, quantity:1 },
   { name : "ZOOK07" , url : '/images/bike-2.jpg', price : 999, quantity:4 },  
